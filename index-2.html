@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xu Zian — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow-tl"></div>
+<button class="menu-toggle" id="menuBtn" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header"><div class="sidebar-logo">xu_zian<span>.dev</span></div><div class="sidebar-sub">Portfolio 2025</div></div>
+  <nav class="sidebar-nav">
+    <a class="nav-item active" data-page="accueil" onclick="goTo('accueil')"><span class="nav-num">01</span>Accueil</a>
+    <a class="nav-item" data-page="about" onclick="goTo('about')"><span class="nav-num">02</span>Présentation</a>
+    <a class="nav-item" data-page="skills" onclick="goTo('skills')"><span class="nav-num">03</span>Compétences</a>
+    <a class="nav-item" data-page="projets" onclick="goTo('projets')"><span class="nav-num">04</span>Projets</a>
+    <a class="nav-item" data-page="parcours" onclick="goTo('parcours')"><span class="nav-num">05</span>Parcours</a>
+    <a class="nav-item" data-page="cv" onclick="goTo('cv')"><span class="nav-num">06</span>CV</a>
+    <a class="nav-item" data-page="contact" onclick="goTo('contact')"><span class="nav-num">07</span>Contact</a>
+  </nav>
+  <div class="sidebar-footer"><a href="CV_Xu_Zian.pdf" download class="cv-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Télécharger CV</a></div>
+</aside>
+
+<main class="main">
+
+<!-- ACCUEIL -->
+<div class="page active" id="page-accueil" data-page="accueil"><div class="page-inner hero-flex">
+  <div class="hero-left">
+    <div class="hero-hello rv rv-d1 vis"><span>&gt;</span> Bonjour, je suis</div>
+    <h1 class="hero-name rv rv-d2 vis">Xu <span class="accent">Zian</span></h1>
+    <p class="hero-desc rv rv-d3 vis">Étudiant en BUT Informatique, je recherche une alternance de 2 ans en Data/IA ou Cybersécurité.</p>
+    <div class="hero-tags rv rv-d4 vis"><span class="htag">Python</span><span class="htag">Java</span><span class="htag">SQL</span><span class="htag">PHP</span><span class="htag">HTML/CSS</span></div>
+    <div class="hero-cta rv rv-d5 vis">
+      <a href="CV_Xu_Zian.pdf" download class="btn-p"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Mon CV</a>
+      <button class="btn-g" onclick="goTo('projets')">Mes projets</button>
+    </div>
+  </div>
+  <div class="hero-right rv rv-d3 vis"><div class="orb-wrap"><div class="orb"><div class="orb-text"><span style="font-size:.5rem;letter-spacing:.15em;text-transform:uppercase">Recherche</span><span class="val">2 ans</span><span>alternance</span></div></div></div></div>
+</div></div>
+
+<!-- PRÉSENTATION -->
+<div class="page" id="page-about" data-page="about"><div class="page-inner">
+  <div class="section-label rv">02 — À propos</div>
+  <h2 class="section-title rv rv-d1">Qui suis-je<em> ?</em></h2>
+  <div class="sep rv rv-d2"></div>
+
+  <p class="about-content rv rv-d2">Étudiant en première année de BUT Informatique à l'Université Gustave Eiffel. Titulaire d'un Bac STI2D, je m'intéresse à la Data, l'IA et la Cybersécurité. Je recherche une alternance de 2 ans pour monter en compétences dans un environnement professionnel.</p>
+
+  <div class="info-grid rv rv-d3">
+    <div class="info-item"><div class="info-label">Formation</div><div class="info-val">BUT Informatique — Gustave Eiffel</div></div>
+    <div class="info-item"><div class="info-label">Localisation</div><div class="info-val">Chelles (77) — Mobilité IdF</div></div>
+    <div class="info-item"><div class="info-label">Spécialisation visée</div><div class="info-val">Data/IA & Cybersécurité</div></div>
+    <div class="info-item"><div class="info-label">Disponibilité</div><div class="info-val">Alternance dès sept. 2026</div></div>
+  </div>
+
+  <div class="section-label rv rv-d4" style="margin-top:1.5rem">Langues</div>
+  <div class="lang-row rv rv-d4">
+    <div class="lang"><div class="lang-name">Chinois</div><div class="lang-lvl">Langue maternelle</div></div>
+    <div class="lang"><div class="lang-name">Français</div><div class="lang-lvl">Courant</div></div>
+    <div class="lang"><div class="lang-name">Anglais</div><div class="lang-lvl">Technique</div></div>
+  </div>
+</div></div>
+
+<!-- COMPÉTENCES -->
+<div class="page" id="page-skills" data-page="skills"><div class="page-inner">
+  <div class="section-label rv">03 — Skills</div>
+  <h2 class="section-title rv rv-d1">Mes <em>compétences</em></h2>
+  <div class="sep rv rv-d2"></div>
+
+  <div class="skills-section">
+    <div class="sk-group rv rv-d2">
+      <div class="sk-group-title">Langages</div>
+      <div class="sk-tags"><span class="sk-tag">Python</span><span class="sk-tag">Java</span><span class="sk-tag">SQL</span><span class="sk-tag">PHP</span></div>
+    </div>
+    <div class="sk-group rv rv-d3">
+      <div class="sk-group-title">Web</div>
+      <div class="sk-tags"><span class="sk-tag">HTML</span><span class="sk-tag">CSS</span></div>
+    </div>
+    <div class="sk-group rv rv-d4">
+      <div class="sk-group-title">Outils & environnement</div>
+      <div class="sk-tags"><span class="sk-tag">Git</span><span class="sk-tag">VS Code</span><span class="sk-tag">IntelliJ</span><span class="sk-tag">MySQL</span><span class="sk-tag">PostgreSQL</span><span class="sk-tag">Linux</span></div>
+    </div>
+    <div class="sk-group rv rv-d5">
+      <div class="sk-group-title">Savoir-être</div>
+      <div class="sk-tags"><span class="sk-tag">Rigueur</span><span class="sk-tag">Travail en équipe</span><span class="sk-tag">Autonomie</span><span class="sk-tag">Apprentissage rapide</span></div>
+    </div>
+  </div>
+</div></div>
+
+<!-- PROJETS -->
+<div class="page" id="page-projets" data-page="projets"><div class="page-inner">
+  <div class="section-label rv">04 — Réalisations</div>
+  <h2 class="section-title rv rv-d1">Mes <em>projets</em></h2>
+  <p class="section-desc rv rv-d2">Projets réalisés en BUT Informatique, en binôme ou trinôme.</p>
+  <div class="sep rv rv-d2"></div>
+
+  <div class="projects-list">
+
+    <!-- Zarza-Ski -->
+    <div class="proj rv rv-d2">
+      <div class="proj-type">SAE — Exploitation d'une base de données</div>
+      <div class="proj-name">Ski Low-Cost — Zarza-Ski</div>
+      <div class="proj-desc">Site web dynamique pour gérer une station de ski : réservation, attribution des chambres, facturation et statistiques. Migration MySQL vers PostgreSQL, authentification bcrypt, transactions sécurisées.</div>
+      <div class="proj-points">
+        <div class="proj-point">12 tables, MCD/MLD avec associations ternaires et réflexive</div>
+        <div class="proj-point">4 processus métier avec SELECT FOR UPDATE, EXISTS, CASE/AGE, READ ONLY</div>
+        <div class="proj-point">Sessions PHP, rôles gestionnaire/admin, requêtes préparées PDO</div>
+      </div>
+      <div class="proj-pills"><span class="pp">PostgreSQL</span><span class="pp">PHP / PDO</span><span class="pp">MCD / MLD</span><span class="pp">Binôme</span></div>
+      <div class="proj-footer"><span class="proj-meta">Semestre 2 — 2026</span><a href="Rendu3_BHATT_XU.pdf" download class="proj-dl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Rapport PDF</a></div>
+    </div>
+
+    <!-- Wall is You -->
+    <div class="proj rv rv-d3">
+      <div class="proj-type">SAE — Initiation au développement</div>
+      <div class="proj-name">Wall is You</div>
+      <div class="proj-desc">Jeu de réflexion en Python : le joueur pivote les salles d'un donjon pour guider un aventurier vers les dragons. Architecture modulaire (moteur, interface, données).</div>
+      <div class="proj-points">
+        <div class="proj-point">Rotation des salles, tracé de parcours, moteur de jeu complet</div>
+        <div class="proj-point">Variante « Dragons Mobiles » avec déplacement aléatoire et collisions</div>
+      </div>
+      <div class="proj-pills"><span class="pp">Python</span><span class="pp">fltk (GUI)</span><span class="pp">Algorithmique</span><span class="pp">Binôme</span></div>
+      <div class="proj-footer"><span class="proj-meta">Semestre 1 — 2025</span></div>
+    </div>
+
+    <!-- DHCP -->
+    <div class="proj rv rv-d3">
+      <div class="proj-type">SAE — Services Réseaux</div>
+      <div class="proj-name">Serveur DHCP — Netkit-ng</div>
+      <div class="proj-desc">Installation et configuration d'un serveur DHCP sous Linux. Réseau simulé de 5 machines avec attribution dynamique, réservation d'adresses fixes par MAC et analyse de sécurité.</div>
+      <div class="proj-points">
+        <div class="proj-point">Subnet 192.168.1.0/24, plage dynamique, baux 600s/7200s, directive authoritative</div>
+        <div class="proj-point">Tests de connectivité, analyse des baux, DHCP Spoofing et Starvation</div>
+      </div>
+      <div class="proj-pills"><span class="pp">Linux</span><span class="pp">Netkit-ng</span><span class="pp">DHCP</span><span class="pp">Réseau</span><span class="pp">Trinôme</span></div>
+      <div class="proj-footer"><span class="proj-meta">Semestre 2 — 2026</span><a href="Rapport_technique_SAE_DHCP.pdf" download class="proj-dl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Rapport PDF</a></div>
+    </div>
+
+    <!-- Graphes & Automates -->
+    <div class="proj rv rv-d4">
+      <div class="proj-type">SAE — Graphes & Automates</div>
+      <div class="proj-name">Automates finis en Python</div>
+      <div class="proj-desc">Implémentation de la théorie des automates finis : opérations sur les mots/langages, déterminisation, complémentation, automate produit, fermeture et minimisation de Moore.</div>
+      <div class="proj-points">
+        <div class="proj-point">6 parties : mots, automates, déterminisation, complétion, produit, minimisation</div>
+        <div class="proj-point">Construction par sous-ensembles, produit cartésien, algorithme de Moore</div>
+      </div>
+      <div class="proj-pills"><span class="pp">Python</span><span class="pp">Algorithmique</span><span class="pp">Théorie des langages</span></div>
+      <div class="proj-footer"><span class="proj-meta">Semestre 2 — 2026</span></div>
+    </div>
+
+    <!-- Grande Muraille -->
+    <div class="proj rv rv-d4">
+      <div class="proj-type">Site Web</div>
+      <div class="proj-name">La Grande Muraille de Chine</div>
+      <div class="proj-desc">Site vitrine multi-pages en partenariat thématique UNESCO. Vidéo hero, mode daltonien pour l'accessibilité, design responsive.</div>
+      <div class="proj-pills"><span class="pp">HTML5</span><span class="pp">CSS3</span><span class="pp">Responsive</span><span class="pp">Accessibilité</span></div>
+      <div class="proj-footer"><span class="proj-meta">Semestre 1 — 2025</span></div>
+    </div>
+
+    <!-- Dual-Boot -->
+    <div class="proj rv rv-d5">
+      <div class="proj-type">Système</div>
+      <div class="proj-name">Dual-Boot Ubuntu / Windows</div>
+      <div class="proj-desc">Guide technique : partitionnement, UEFI/BIOS, chargeur GRUB, gestion des ressources et compatibilité.</div>
+      <div class="proj-pills"><span class="pp">Linux</span><span class="pp">Ubuntu</span><span class="pp">GRUB</span><span class="pp">UEFI/BIOS</span></div>
+      <div class="proj-footer"><span class="proj-meta">Semestre 1 — 2025</span><a href="Rapport_Dual_Boot.docx" download class="proj-dl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Rapport</a></div>
+    </div>
+
+    <!-- Video -->
+    <div class="proj rv rv-d5">
+      <div class="proj-type">Vidéo — Anglais</div>
+      <div class="proj-name">Video Montage Project</div>
+      <div class="proj-desc">Montage vidéo en anglais — projet de communication et expression orale.</div>
+      <div class="proj-pills"><span class="pp">English</span><span class="pp">Montage</span><span class="pp">Production</span></div>
+      <div class="proj-footer"><span class="proj-meta">Semestre 1 — 2025</span></div>
+    </div>
+
+  </div>
+</div></div>
+
+<!-- PARCOURS -->
+<div class="page" id="page-parcours" data-page="parcours"><div class="page-inner">
+  <div class="section-label rv">05 — Parcours</div>
+  <h2 class="section-title rv rv-d1">Mon <em>parcours</em></h2>
+  <div class="sep rv rv-d2"></div>
+  <div class="tl">
+    <div class="tl-item rv rv-d2"><div class="tl-dot"></div><div class="tl-date">Sept. 2025 — 2028</div><div class="tl-title">BUT Informatique</div><div class="tl-place">Université Gustave Eiffel — Champs-sur-Marne</div><div class="tl-desc">Développement, bases de données, algorithmique, gestion de projets. Spécialisation Data/IA & Cybersécurité en perspective.</div></div>
+    <div class="tl-item rv rv-d3"><div class="tl-dot"></div><div class="tl-date">Sept. 2022 — Juin 2025</div><div class="tl-title">Baccalauréat STI2D</div><div class="tl-place">Lycée Gustave Eiffel — Gagny</div><div class="tl-desc">Innovation, systèmes d'information, développement durable.</div></div>
+    <div class="tl-item rv rv-d4"><div class="tl-dot"></div><div class="tl-date">Stage d'observation</div><div class="tl-title">LPA Consulting</div><div class="tl-place">Houilles</div><div class="tl-desc">Découverte du monde professionnel en cabinet de conseil.</div></div>
+  </div>
+</div></div>
+
+<!-- CV -->
+<div class="page" id="page-cv" data-page="cv"><div class="page-inner">
+  <div class="section-label rv">06 — CV</div>
+  <h2 class="section-title rv rv-d1">Mon <em>CV</em></h2>
+  <div class="sep rv rv-d2"></div>
+  <div class="rv rv-d2">
+    <div class="doc-viewer">
+      <div class="doc-bar">
+        <div class="doc-fname"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>CV_Xu_Zian.pdf</div>
+        <a href="CV_Xu_Zian.pdf" download class="doc-dl"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Télécharger</a>
+      </div>
+      <iframe class="doc-frame" src="CV_Xu_Zian.pdf" title="CV Xu Zian"></iframe>
+    </div>
+  </div>
+</div></div>
+
+<!-- CONTACT -->
+<div class="page" id="page-contact" data-page="contact"><div class="page-inner contact-center">
+  <div class="contact-inner">
+    <div class="section-label rv" style="display:inline-block">07 — Contact</div>
+    <h2 class="contact-big rv rv-d1">Envie d'apprendre, de contribuer<br><em>et de grandir à vos côtés</em></h2>
+    <p class="contact-sub rv rv-d2">Disponible pour une alternance de 2 ans en Data/IA & Cybersécurité.</p>
+    <div class="c-grid rv rv-d3">
+      <a href="/cdn-cgi/l/email-protection#2c59455f43404d42586c4b414d4540024f4341" class="c-item"><div class="c-label">Email</div><div class="c-val"><span class="__cf_email__" data-cfemail="d8adb1abb7b4b9b6ac98bfb5b9b1b4f6bbb7b5">uisolant@gmail.com</span></div></a>
+      <a href="tel:+33750587384" class="c-item"><div class="c-label">Téléphone</div><div class="c-val">07 50 58 73 84</div></a>
+      <a href="https://www.linkedin.com/in/%E5%AD%90%E5%AE%89-%E5%BE%90-6149aa3a8" target="_blank" class="c-item"><div class="c-label">LinkedIn</div><div class="c-val">Xu Zian</div></a>
+      <div class="c-item"><div class="c-label">Localisation</div><div class="c-val">Chelles — IdF</div></div>
+    </div>
+    <div class="rv rv-d4">
+      <div class="status"><span class="status-dot"></span>Disponible — Alternance sept. 2026</div>
+    </div>
+  </div>
+</div></div>
+
+</main>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+let currentPage='accueil';
+var pages=['accueil','about','skills','projets','parcours','cv','contact'];
+
+function goTo(p){
+  if(p===currentPage)return;
+  document.querySelector('.nav-item[data-page="'+currentPage+'"]')?.classList.remove('active');
+  document.getElementById('page-'+currentPage)?.classList.remove('active');
+  currentPage=p;
+  document.querySelector('.nav-item[data-page="'+p+'"]')?.classList.add('active');
+  var el=document.getElementById('page-'+p);
+  if(el){
+    el.classList.add('active');
+    el.scrollTop=0;
+    setTimeout(function(){
+      el.querySelectorAll('.rv').forEach(function(r){r.classList.add('vis')});
+    },80);
+  }
+  if(window.innerWidth<=900)toggleMenu();
+}
+
+function toggleMenu(){
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('show');
+  document.getElementById('menuBtn').classList.toggle('open');
+}
+
+document.addEventListener('keydown',function(e){
+  var i=pages.indexOf(currentPage);
+  if((e.key==='ArrowDown'||e.key==='ArrowRight')&&i<pages.length-1)goTo(pages[i+1]);
+  else if((e.key==='ArrowUp'||e.key==='ArrowLeft')&&i>0)goTo(pages[i-1]);
+});
+
+document.getElementById('page-accueil').querySelectorAll('.rv').forEach(function(r){r.classList.add('vis')});
+</script>
+</body>
+</html>
